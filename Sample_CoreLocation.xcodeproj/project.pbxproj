@@ -15,6 +15,7 @@
 		5E22942F269257CB004443AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22942D269257CB004443AA /* LaunchScreen.storyboard */; };
 		5E22943A269257CB004443AA /* Sample_CoreLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E229439269257CB004443AA /* Sample_CoreLocationTests.swift */; };
 		5E229445269257CB004443AA /* Sample_CoreLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E229444269257CB004443AA /* Sample_CoreLocationUITests.swift */; };
+		5E229456269257EC004443AA /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E229455269257EC004443AA /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5E229440269257CB004443AA /* Sample_CoreLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sample_CoreLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E229444269257CB004443AA /* Sample_CoreLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_CoreLocationUITests.swift; sourceTree = "<group>"; };
 		5E229446269257CB004443AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E229455269257EC004443AA /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5E22942D269257CB004443AA /* LaunchScreen.storyboard */,
 				5E229430269257CB004443AA /* Info.plist */,
 				5E22942A269257CB004443AA /* Preview Content */,
+				5E229455269257EC004443AA /* LocationViewModel.swift */,
 			);
 			path = Sample_CoreLocation;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				5E229423269257C9004443AA /* AppDelegate.swift in Sources */,
 				5E229425269257C9004443AA /* SceneDelegate.swift in Sources */,
 				5E229427269257C9004443AA /* ContentView.swift in Sources */,
+				5E229456269257EC004443AA /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
