@@ -11,7 +11,7 @@ import CoreLocation
 
 struct ContentView: View {
     
-    @StateObject var locationViewModel = LocationViewModel()
+    @StateObject var locationViewModel = LocationManager()
       
       var body: some View {
           switch locationViewModel.authorizationStatus {
@@ -39,7 +39,7 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct RequestLocationView: View {
-    @EnvironmentObject var locationViewModel: LocationViewModel
+    @EnvironmentObject var locationViewModel: LocationManager
     
     var body: some View {
         VStack {
@@ -80,7 +80,7 @@ struct ErrorView: View {
 }
 
 struct TrackingView: View {
-    @EnvironmentObject var locationViewModel: LocationViewModel
+    @EnvironmentObject var locationViewModel: LocationManager
     var coordinate: CLLocationCoordinate2D? {
         locationViewModel.lastSeenLocation?.coordinate
     }

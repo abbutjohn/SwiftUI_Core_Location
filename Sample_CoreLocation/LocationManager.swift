@@ -1,5 +1,5 @@
 //
-//  LocationViewModel.swift
+//  LocationManager.swift
 //  Sample_CoreLocation
 //
 //  Created by Praveen George on 04/07/2021.
@@ -7,7 +7,7 @@
 
 import CoreLocation
 
-class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var authorizationStatus: CLAuthorizationStatus
     @Published var lastSeenLocation: CLLocation?
