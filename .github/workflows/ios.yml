@@ -7,15 +7,20 @@ on:
     branches: [ Main ]
 
 jobs:
+
   build-and-test:
     runs-on: macos-latest
 
     steps:
     
-    - uses: actions/checkout@v2
-
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode.app
-      
-    - name: Build and test
-      run: xcodebuild clean build test -xcodeproj Sample_CoreLocation.xcodeproj -scheme "Sample_CoreLocation" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11"
+      - name: Checkout repository
+        uses: actions/checkout@v1
+        
+      - name: Force XCode 13.4.1
+        run: sudo xcode-select -switch /Applications/Xcode.app
+        
+      - name: Testing iOS app
+        run: exec xcodebuild -workspace Sample_CoreLocation.xcodeproj \
+            -scheme Sample_CoreLocation\ iOS \
+            -destination platform=iOS\ Simulator,OS=13.3,name=iPhone\ 11 \
+            clean test | xcpretty
